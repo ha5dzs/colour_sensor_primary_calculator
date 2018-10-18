@@ -1,0 +1,4 @@
+The gamut is as follows:
+Red: x = 0.582692, y = 0.382919
+Green: x = 0.283233, y = 0.525670
+Blue: x = 0.144560, y = 0.134175

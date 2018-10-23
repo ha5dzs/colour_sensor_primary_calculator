@@ -29,9 +29,9 @@ Once these chromaticity coordinateas are obtained, the sensor's detected colour 
 
 # ...and your references?
 
-I shamelessly stole the colour matching functions from here:
+I shamelessly stole the colour matching functions and the integration method from here:
 [https://www.mathworks.com/matlabcentral/fileexchange/29620-cie-coordinate-calculator](https://www.mathworks.com/matlabcentral/fileexchange/29620-cie-coordinate-calculator)  
 Thanks to Stacey Aston, I read this:  
 [https://theses.ncl.ac.uk/dspace/bitstream/10443/1438/1/Wolf%2011.pdf](https://theses.ncl.ac.uk/dspace/bitstream/10443/1438/1/Wolf%2011.pdf)  
-...and the I also read this, which gave an idea on how to do this properly:
+...and I also read this, which gave an idea on how to do this properly:
 [http://hyperphysics.phy-astr.gsu.edu/hbase/vision/cieprim.html#c3](http://hyperphysics.phy-astr.gsu.edu/hbase/vision/cieprim.html#c3)

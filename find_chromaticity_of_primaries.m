@@ -90,14 +90,17 @@ blue.Z = trapz(colour_matching_functions(:, 1), blue.Z_ydata);
 
 red.x = red.X / (red.X + red.Y + red.Z);
 red.y = red.Y / (red.X + red.Y + red.Z);
+red.z = red.Z / (red.X + red.Y + red.Z);
 
 green.x = green.X / (green.X + green.Y + green.Z);
 green.y = green.Y / (green.X + green.Y + green.Z);
+green.z = green.Z / (green.X + green.Y + green.Z);
 
-blue.x = blue.X / (blue.X + green.Y + blue.Z);
-blue.y = blue.Y / (blue.X + green.Y + blue.Z);
+blue.x = blue.X / (blue.X + blue.Y + blue.Z);
+blue.y = blue.Y / (blue.X + blue.Y + blue.Z);
+blue.z = blue.Z / (blue.X + blue.Y + blue.Z);
 
-output_string = sprintf("The gamut is as follows:\nRed: x = %f, y = %f\nGreen: x = %f, y = %f\nBlue: x = %f, y = %f\n", red.x, red.y, green.x, green.y, blue.x, blue.y);
+output_string = sprintf("The gamut is as follows:\nRed: X = %f, Y = %f, Z = %f, x = %f, y = %f, z = %f\nGreen: X = %f, Y = %f, Z = %f, x = %f, y = %f, z = %f\nBlue: X = %f, Y = %f, Z = %f, x = %f, y = %f, z = %f\n", red.X, red.Y, red.Z, red.x, red.y, red.z, green.X, green.Y, green.Z, green.x, green.y, green.z, blue.X, blue.Y, blue.Z, blue.x, blue.y, blue.z);
 fprintf(output_string);
 %Save it to a file too.
 file_handle = fopen('primaries.txt', 'w');
